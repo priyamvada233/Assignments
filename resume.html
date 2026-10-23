@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f0ff;
+        margin: 0;
+        padding: 20px;
+        color: #333333;
+    }
+    .resume {
+        width: 100%;
+        max-width: 750px;
+        margin: auto;
+        background-color: white;
+        padding: 25px;
+        border: 2px solid #d8c8f0;
+        border-radius: 10px;
+    }
+    .resume-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        background-color: #e9ddff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .header-info {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .header-info h1 {
+        color: #6741a5;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-info p {
+        margin: 6px 0;
+        line-height: 1.5;
+    }
+    .profile-photo {
+        width: 130px;
+        height: 145px;
+        
+        border-radius: 10px;
+        border: 2px solid #d8c8f0;
+        flex-shrink: 0;
+        display: block;
+    }
+    .section {
+        margin-top: 22px;
+        padding: 5px 10px;
+    }
+
+    h2 {
+        color: #6741a5;
+        border-bottom: 2px solid #e9ddff;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+        color: #555555;
+    }
+
+    p, li {
+        line-height: 1.6;
+    }
+
+    ul {
+        padding-left: 25px;
+    }
+
+    .highlight {
+        color: #6741a5;
+        font-weight: bold;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #d8c8f0;
+        margin-top: 20px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+        }
+
+        .resume {
+            padding: 12px;
+        }
+
+        .resume-header {
+            padding: 12px;
+            gap: 10px;
+        }
+
+        .profile-photo {
+            width: 80px;
+            height: 95px;
+        }
+
+        .header-info h1 {
+            font-size: 22px;
+        }
+
+        .section {
+            padding: 5px;
+        }
+    }
+
+    
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px 0;
+    padding: 12px;
+    background-color: #f5f0ff;
+    border-radius: 8px;
+}
+
+.navigation a {
+    color: #6741a5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 8px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <!-- Personal Information -->
+       <header class="resume-header">
+    <div class="header-info">
+        <h1>Priyamvada Rajput</h1>
+        <p><strong>B.Tech CSE (AI)</strong></p>
+        <p>First-Year Student | Invertis University</p>
+        <p>Email: pvr233@email.com</p>
+        <p>Location: Bareilly, Uttar Pradesh</p>
+    </div>
+
+    <img src="myphoto.jpeg"
+         alt="My professional photo"
+         class="profile-photo">
+</header>
+       
+<nav class="navigation">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#blog">My Blog</a>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+</nav>
+
+     <main>
+        <hr>
+
+        <!-- About Me -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+            I am a first-year B.Tech student specializing in Computer Science and Engineering with Artificial Intelligence at Invertis University.
+            I am eager to explore new technologies, develop my technical abilities, and learn through practical experiences.
+            I enjoy creative activities, teamwork, and opportunities that help me grow both personally and academically.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <h2>Education</h2>
+
+            <h3>B.Tech CSE (AI)</h3>
+            <p>Invertis University — Currently pursuing</p>
+
+            <h3>School</h3>
+            <p>BVB Public School, HRI (ICSE)</p>
+            <p>St. James School, HRI (CBSE)</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML and CSS - Basics</li>
+                <li>JavaScript - Basics</li>
+                <li>Java — Currently learning</li>
+                <li>Communication and teamwork</li>
+                <li>Creative thinking and problem-solving</li>
+            </ul>
+            
+            <h3>Areas I Am Learning</h3>
+        <ul>
+            <li>Programming
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+            </li>
+            <li>Web Development
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+            </li>
+        </ul>
+
+        </section>
+
+        <!-- Achievements -->
+        <section class="section" id="achievements">
+            <h2>Achievements & Activities</h2>
+            <ul>
+                <li>Won prizes in school-level debate competitions.</li>
+                <li>Achieved first place in district-level basketball.</li>
+                <li>Participated in science projects and school activities.</li>
+                <li>Served as a class representative.</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="section" id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Music and singing</li>
+                <li>Basketball and other sports</li>
+                <li>Sketching and portraits</li>
+                <li>Exploring technology and creative ideas</li>
+                <li>Reading literature and exploring new perspectives</li>
+            </ul>
+        </section>
+
+        <!-- Strengths -->
+        <section class="section" id="strengths">
+            <h2>Personal Strengths</h2>
+            <p>
+                Creative and curious, disciplined and dedicated, Strong team spirit, Willingness to learn, Adaptable and open to new experiences
+            </p>
+        </section>
+          
+<article class="section" id="blog">
+    <h2>My Journey into Web Development</h2>
+
+    <p>
+        Starting my journey in Computer Science and Engineering
+        has introduced me to many exciting areas of technology.
+        One of the first things I began exploring was web development,
+        which helped me understand how websites are created and designed.
+    </p>
+
+    <p>
+        Learning HTML taught me how to structure a webpage using
+        headings, paragraphs, images, links, and lists. As I moved
+        towards CSS, I discovered how colours, spacing, borders,
+        and layouts can make a webpage more attractive and organised.
+    </p>
+
+    <p>
+        Building my own resume webpage has been a useful learning
+        experience. It allowed me to apply these concepts practically
+        instead of only reading about them. I also learned that even
+        small details, such as image alignment and responsive layouts,
+        can make a difference in the overall design.
+    </p>
+
+    <p>
+        I know that this is only the beginning of my learning journey.
+        I look forward to exploring JavaScript, improving my problem-solving
+        skills, and creating more interactive projects. My goal is to keep
+        learning through practice and turn my ideas into useful digital
+        experiences.
+    </p>
+
+    <p>
+        <a href="https://developer.mozilla.org/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Explore Web Development Resources
+        </a>
+    </p>
+</article>
+</main>
+        <hr>
+
+        <footer>
+            <p style="text-align: center;">
+                <em>Committed to continuous learning, developing new skills, and making the most of every opportunity.</em>
+            </p>
+        </footer>
+
+    
+</body>
+</html>
