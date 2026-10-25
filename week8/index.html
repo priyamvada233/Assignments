@@ -62,6 +62,33 @@
             text-align: center;
             border-radius: 12px;
         }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .stat-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #e5eee0;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #cedfc8;
+        }
+
+        .stat-card h3 {
+            font-size: 16px;
+        }
+
+        .stat-card p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
 
         h2 {
             margin-bottom: 14px;
@@ -89,10 +116,34 @@
             <p>Progress</p>
         </aside>
 
-        <main class="main">
-            <h2>Welcome Back!</h2>
-            <p>Keep learning, stay organised, and make progress every day.</p>
-        </main>
+        
+<main class="main">
+    <h2>Welcome Back!</h2>
+    <p>Keep learning, stay organised, and make progress every day.</p>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>My Courses</h3>
+            <p>04 active courses</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Assignments</h3>
+            <p>06 tasks to complete</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Study Hours</h3>
+            <p>12 hours this week</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Progress</h3>
+            <p>Keep moving forward!</p>
+        </div>
+    </div>
+</main>
+
 
         <footer class="footer">
             <p>StudySpace | Learn at your own pace.</p>
