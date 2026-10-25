@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f8;
+            color: #12203a;
+        }
+
+        header {
+            background: #12203a;
+            color: white;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .profile-card {
+            width: 280px;
+            margin: 24px auto;
+            padding: 20px;
+            background: white;
+            border: 2px solid #7560a8;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            background: #7560a8;
+            color: white;
+            font-size: 36px;
+            line-height: 90px;
+        }
+
+        .bio {
+            height: 80px;
+            overflow: auto;
+            padding: 8px;
+            margin-top: 12px;
+            border: 1px solid #ccd;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .floating-button {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            width: 52px;
+            height: 52px;
+            border: 0;
+            border-radius: 50%;
+            background: #ffb703;
+            font-size: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>My Profile Page</header>
+
+    <div class="profile-card">
+        <div class="avatar">P</div>
+        <h2>Priyamvada Rajput</h2>
+        <p>Computer Science Student</p>
+
+        <div class="bio">
+            Hi! I am a first-year B.Tech CSE student interested in
+            coding, web development, music and sports. I enjoy learning
+            new technologies and building creative projects. My goal is
+            to improve my programming skills and create useful applications.
+            Every new project is an opportunity to learn something different
+            and improve my problem-solving skills.
+        </div>
+    </div>
+
+    <button class="floating-button" aria-label="Add">+</button>
+</body>
+</html>
