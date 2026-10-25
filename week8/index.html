@@ -1,12 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySpace Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f5ed;
+            color: #243b32;
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "head head"
+                "side main"
+                "foot foot";
+            gap: 18px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .header {
+            grid-area: head;
+            background: #244b3b;
+            color: white;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .sidebar {
+            grid-area: side;
+            background: #dce9d8;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .main {
+            grid-area: main;
+            background: #fffdf7;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .footer {
+            grid-area: foot;
+            background: #e8ddc7;
+            padding: 16px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        h2 {
+            margin-bottom: 14px;
+        }
+
+        .sidebar p {
+            margin: 14px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>StudySpace Dashboard</h1>
-    <p>Your space to organise, learn, and keep track of progress.</p>
+    <div class="dashboard">
+
+        <header class="header">
+            <h1>StudySpace Dashboard</h1>
+            <p>Your space to organise, learn, and track progress.</p>
+        </header>
+
+        <aside class="sidebar">
+            <h2>My Menu</h2>
+            <p>Dashboard</p>
+            <p>My Courses</p>
+            <p>Assignments</p>
+            <p>Progress</p>
+        </aside>
+
+        <main class="main">
+            <h2>Welcome Back!</h2>
+            <p>Keep learning, stay organised, and make progress every day.</p>
+        </main>
+
+        <footer class="footer">
+            <p>StudySpace | Learn at your own pace.</p>
+        </footer>
+
+    </div>
 </body>
 </html>
+
