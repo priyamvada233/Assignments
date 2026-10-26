@@ -1,0 +1,223 @@
+
+/* Bloom Studio — Responsive Landing Page */
+
+/* 1. Base styles */
+
+:root {
+    --rose: #c87979;
+    --ivory: #fffaf5;
+    --plum: #382536;
+    --muted: #796d76;
+    --light-rose: #f4e5e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--ivory);
+    color: var(--plum);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+header {
+    padding: 1.25rem 6%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--plum);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--rose);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--plum);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav ul a:hover {
+    color: var(--rose);
+}
+
+/* 2. Hero section */
+
+.hero {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 5rem 8%;
+    min-height: 75vh;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    max-width: 750px;
+}
+
+.hero h1 span {
+    color: var(--rose);
+}
+
+.hero-text {
+    color: var(--muted);
+    max-width: 550px;
+    margin: 1.5rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--plum);
+    color: white;
+    padding: 0.9rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--rose);
+}
+
+/* 3. About section */
+
+.about {
+    padding: 4rem 8%;
+    background-color: var(--light-rose);
+    text-align: center;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.about > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+}
+
+/* 4. Services section */
+
+.services {
+    padding: 4rem 8%;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.service-card {
+    padding: 1.75rem;
+    background-color: white;
+    border: 1px solid #eadbd7;
+    border-radius: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    color: var(--muted);
+}
+
+/* 5. Contact section */
+
+.contact {
+    padding: 4rem 8%;
+    text-align: center;
+    background-color: var(--light-rose);
+}
+
+.contact > p:not(.eyebrow) {
+    color: var(--muted);
+    margin: 1rem 0 1.5rem;
+}
+
+/* 6. Tablet layout — 768px and above */
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 7. Desktop layout — 1024px and above */
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 6rem 12%;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .about,
+    .services,
+    .contact {
+        padding: 5rem 12%;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
